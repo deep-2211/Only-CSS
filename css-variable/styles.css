@@ -1,0 +1,36 @@
+:root {
+  --main-color: #ff6347; /* Tomato */
+  --secondary-color: #4682b4; /* SteelBlue */
+  --font-family: "Arial, sans-serif";
+  --font-size: 64px;
+}
+
+h1 {
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  align-self: center;
+  color: var(--main-color);
+  padding: 10px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--secondary-color);
+}
+
+.background-img {
+  background: url("./images/butterfly.jpg"),
+    linear-gradient(firebrick, lightblue);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full height */
+  width: 100vw; /* Full width */
+}
