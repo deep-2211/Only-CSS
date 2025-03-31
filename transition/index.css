@@ -1,0 +1,26 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
+}
+
+.box {
+  width: 15em;
+  height: 15em;
+  background-color: coral;
+  transition-duration: 100ms;
+  transition-property: transform, background-color;
+  transition-timing-function: ease-in-out;
+  transition-delay: 100ms;
+}
+
+.box:hover {
+  background-color: darkseagreen;
+  transform: rotate(45deg);
+}
+
+.text-wrapper h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
