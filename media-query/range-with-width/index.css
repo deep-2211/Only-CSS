@@ -1,0 +1,24 @@
+:root {
+  --bg-color: rebeccapurple;
+}
+
+/* 
+  Here we don't need min-width and max-width instead `width` will do the job along with the range
+ */
+@media screen and (600px <= width <= 800px) {
+  :root {
+    --bg-color: orangered;
+  }
+}
+
+@media (width > 800px) {
+  :root {
+    --bg-color: lightgreen;
+  }
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg-color);
+}
