@@ -5,13 +5,13 @@
 /* 
   Here we don't need min-width and max-width instead `width` will do the job along with the range
  */
-@media screen and (600px <= width <= 800px) {
+/* @media screen and (600px <= width <= 800px) {
   :root {
     --bg-color: orangered;
   }
-}
+} */
 
-@media (width > 800px) {
+@media (max-width: 800px) {
   :root {
     --bg-color: lightgreen;
   }
