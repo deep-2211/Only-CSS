@@ -1,0 +1,27 @@
+.container {
+  margin-top: 5em;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: darkslategray;
+  /* with this position `box` will be relative to this, else will take position absolute w.r.t document */
+  position: relative;
+}
+
+.box {
+  width: 15em;
+  height: 15em;
+  background-color: coral;
+  position: absolute;
+  /*   top: 0;
+  left: 0; */
+  z-index: 3; /* z-index only works with position absolute or relative */
+}
+
+h1,
+p {
+  color: whitesmoke;
+  z-index: 4;
+}
